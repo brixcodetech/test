@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.a 
+		{
+			width: 100%;
+			height: 50px;
+			background-color: white;
+		}
+		.a1 
+		{
+			float: left;
+			width: 30%;
+			height: 50px;
+			background-color: white;
+		}
+		.a2 
+		{
+			float: left;
+			width: 35%;
+			height: 50px;
+			background-color: white;
+		}
+		.a3
+		{
+
+			float: left;
+			width: 20%;
+			height: 50px;
+			background-color: white;
+
+		}
+		.a4 
+		{
+			float: left;
+			width: 15%;
+			height: 50px;
+			background-color: white;
+		}
+
+		.poni
+		{
+
+      color: gray;
+			font-size: 10px;
+			margin-top: 20px;
+			margin-left: 50px;
+
+	    }
+		
+		.z2 
+		{
+			color: gray;
+			font-size: 10px;
+			margin-top: 20px;
+			margin-left: 20px;
+
+		}
+		#a5 
+		{
+			color: red;
+			font-size: 20px;
+			margin-top: 15px;
+
+		}
+		.a6 
+		{
+			float: left;
+			margin-left: 10px;
+			list-style: none;
+		}
+		.b 
+		{
+			width: 100%;
+			height: 100px;
+			background-color: white;
+		}
+		.navbar
+		{
+			float: left;
+			width: 40%;
+			height: 100px;
+			background-color: white;
+		}
+		.navbar ul li
+		{
+			float: left;
+			list-style: none;
+			margin-left: 20px;
+		}
+		.items
+		{
+
+			position: absolute;
+			left: 10px;
+			top: 100px;
+			width: 1000px;
+			height: 300px;
+			background-color: purple;
+			display: none;
+			margin-top: 40px;
+			margin-left: 100px;
+/*			z-index: -10;*/
+    }
+
+		li:hover .items
+		{
+			display: block;
+		}
+
+
+		.b2
+		{
+			float: left;
+			width: 20%;
+			height: 100px;
+			background-color: white;
+		}
+		.b3
+		{
+			float: left;
+			width:40%;
+			height: 100px;
+			background-color: white;
+		}
+		.iu 
+		{
+			float: left;
+			list-style: none;
+			margin-left: 20px;
+			margin-top: 40px;
+			color: #777171;
+			background-color: white;
+			height: 80px;
+
+
+		}
+		.kl 
+		{
+			margin-left: 30px;
+			margin-top: -10px;
+		}
+		.p 
+		{
+			margin-left: 30px;
+		}
+		.c 
+		{
+			width: 100%;
+			height: 400px;
+			background-color: green;
+		}
+		.d 
+		{
+			width: 100%;
+			height: 230px;
+			background-color: white;
+		}
+		.d1 
+		{
+			text-align: center;
+			font-size: 40px;
+		}
+
+		.zx 
+		{
+			color: #A8A7AA;
+			font-size: 20px;
+/*			margin-left: 200px;*/
+			text-align: center;
+		}
+		.e 
+		{
+			width: 100%;
+			height: 450px;
+			background-color: white;
+		}
+		.e1 
+		{
+			float: left;
+			width: 40%;
+			height: 450px;
+			background-color: red;
+			margin-left: 5%;
+		}
+		.e2 
+		{
+			float: left;
+			width: 30%;
+			height: 450px;
+			background-color: red;
+			margin-left: 300px;
+		}
+		.xc 
+		{
+			margin-left: 15%;
+		}
+		
+
+		.f 
+		{
+			background-color: #A8A7AA;
+			width: 88.99%;
+			height: 300px;
+			margin-top: 50px;
+			margin-left:80px;
+
+		}
+		.di 
+		{
+			float: left;
+			margin-left: 40px;
+			list-style: none;
+
+
+		}
+		.we 
+		{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 101px;
+			color: lightgrey;
+		}
+		.bo 
+		{
+			margin-left: -40px;
+		}
+		
+		.rd 
+		{
+			margin-left: 120px;
+
+		}
+		.h 
+		{
+			width: 90%;
+			height: 200px;
+			background-color: white;
+			margin-left: 	120px;
+			margin-top: 50px;
+		}
+		
+		.u1 
+		{
+			margin-left: 0px;
+		}
+		.o1 
+		{
+			float: left;
+			list-style: none;
+            margin-left: 0px;
+		}
+		.i 
+		{
+			width:80%;
+			height: 250px;
+			background-color: white;
+			margin-top: 50px;
+			margin-left: 80px;
+		}
+		.i1 
+		{
+
+			float: left;
+			width: 60%;
+			height: 250px;
+			background-color: white;
+			margin-left: 50px;
+
+		}
+		.i2 
+		{
+			float: left;
+			width: 20%;
+			height: 250px;
+			background-color: orangered;
+			margin-left: 5%;
+
+		}
+		.old 
+		{
+			font-size: 20px;
+			color: #A8A7AA	;
+		}
+		.new 
+		{
+			width: 150px;
+			height: 40px;
+			background-color: lightgrey;
+		}
+		.j 
+		{
+			width: 90%;
+			height: 300px;
+			background-color: white;
+			margin-top: 50px;
+			margin-left: 50px;
+
+		}
+		.ch 
+		{
+			text-align: center;
+		}
+		.bj 
+		{
+			margin-left: 500px;
+			width: 150px;
+			height: 40px;
+			background-color: lightgrey;
+		}
+		.k 
+		{
+			width: 80%;
+			height: 500px;
+			background-color: yellow;
+			margin-top: 50px;
+			margin-left: 100px;
+		}
+		.l 
+		{
+			width: 90%;
+			height: 600px;
+			background-color: white;
+			margin-top: 50px;
+			margin-left: -15px;
+		}
+		.l1 
+		{
+			float: left;
+			width: 40%;
+			height: 300px;
+			background-color: green;
+			margin-left: 10%;
+		}
+		.l2 
+		{
+		  float: left;
+		  width: 40%;
+		  height: 300px;
+		  background-color: white;
+		  margin-left: 10%;
+		}
+		.m 
+		{
+			width: 90%;
+			height: 800px;
+			background-color: white;
+            margin-top: 50px;
+			margin-left: 90px;
+
+		}
+		.m1 
+		{
+			float: left;
+			width: 60%;
+			height: 700px;
+			background-color: white;
+			margin-left: 5%;
+		}
+		.m2 
+		{
+			float: left;
+			width: 30%;
+			height: 700px;
+			background-color: white;
+			margin-left: 5%;
+		}
+		.m3 
+		{
+			float: left;
+			width: 100%;
+			height: 150px;
+			background-color: white;
+		}
+		.m4 
+		{
+			float: left;
+			width: 100%;
+			height: 400px;
+			background-color: white;
+		}
+		/*.m5 
+		{
+			float: left;
+			width: 100%;
+			height: 50px;
+			background-color: burlywood;
+		}*/
+		.m6 
+		{
+			float: left;
+			width: 40%;
+			height: 400px;
+			background-color: white;
+			margin-left: 7%;
+		}
+		.m7 
+		{
+			float: left;
+			width: 40%;
+			height: 400px;
+			background-color: white;
+			margin-left: 5%;
+
+		}
+		.g 
+		{
+			width: 100%;
+			height: 200px;
+			background-color: white;
+			margin-top: 50px;
+		}
+		.news 
+		{
+			text-align: center;
+			margin-top: 50px;
+			font-size: 40px;
+		}
+		.nj 
+		{
+			width:20%;
+			height:40px;
+			background-color: lightgrey;
+			margin-left: 300px;
+			margin-top: 70px;
+		}
+		.dir
+		{
+			font-size: 25px;
+			color: gray;
+
+		}
+		.dif 
+		{
+			font-size: 20px;
+			color: #A8A7AA;
+		}
+		.nbc 
+		{
+			width: 150px;
+			height: 40px;
+			background-color: lightgrey;
+
+
+		}
+		.an 
+		{
+			color: #2E4649;
+			font-size: 20px;
+		}
+		.th 
+		{
+			color: #212529;
+			font-size: 18px;
+		}
+		.mini 
+		{
+			color: red;
+			
+			border-bottom: 2px solid red;
+			border-spacing: 20px;
+			font-size: 20px;
+			margin-left: 30px;
+
+
+		}
+		.el 
+		{
+			margin-left: 30px;
+			border-bottom: 2px solid red;
+			border width: 30px;
+		}
+		.mm 
+		{
+			width: 150px;
+			height: 40px;
+			background-color: lightgrey;
+			margin-left: 100px;
+		}
+		.vid 
+		{
+		     width: 80%;
+		     height: 300px;
+		     background-color: white;
+		}
+		.vid1 
+
+		{
+			float: left;
+			width: 80%;
+			height: 100px;
+			background-color: white;
+		}
+		.vid2 
+		{
+			float: left;
+			width: 80%;
+			height: 250px;
+			background-color: white;
+			margin-left: 250px;
+		}
+		.tr 
+		{
+			float: left;
+			width: 100%;
+			height: 50px;
+			background-color: white;
+		}
+		.v1 
+		{
+			float: left;
+			width: 25%;
+			height: 250px;
+			background-color: white ;
+			
+		}
+		.v2 
+		{
+			float: left;
+			width: 25%;
+			height: 250px;
+			background-color: white;
+			
+		}
+
+		.v3 
+		{
+			float: left;
+			width: 25%;
+			height: 250px;
+			background-color: white;
+			
+		}
+		.v4 
+		{
+			float: left;
+			width: 25%;
+			height: 250px;
+			background-color: white;
+			
+		}
+		.med 
+		{
+/*			text-align: center;*/
+			margin-top: 20px;
+			font-size:40px;
+			margin-left: 600px;
+
+
+		}
+		.jf 
+		{
+			width: 150px;
+			height: 40px;
+			background-color: lightgrey;
+			margin-left: 600px;
+		}
+		.last 
+		{
+			width: 100%;
+			height: 100px;
+			background-color: lightgrey;
+			margin-top: 150px;
+		}
+		.le 
+		{
+			margin-left: 500px;
+			background-color: white;
+			margin-top: 50px;
+			width: 280px;
+			height: 30px;
+		}
+		.lo 
+		{
+			width: 220px;
+			height: 25px;
+		}
+		.late 
+		{
+			width: 100%;
+			height: 300px;
+			background-color: white;
+		}
+		.lt1 
+		{
+			float: left;
+			width: 70%;
+			height: 300px;
+			background-color: white;
+		}
+		.lt2 
+
+		{
+			float: left;
+			width: 30%;
+			height: 300px;
+		}
+		.n1 
+		{
+			float: left;
+			width: 100%;
+			height: 80px;
+			background-color: white;
+
+		}
+		.n2 
+		{
+			float: left;
+			width: 100%;
+			height: 220px;
+			background-color: white;
+		}
+		.chi 
+		{
+			width: 180px;
+			height: 40px;
+			margin-left: 30px;
+			margin-top: 30px;
+			color: red;
+			list-style: none;
+		}
+		.tom 
+		{
+			float: left;
+			margin-left: 30px;
+			list-style: none;
+		}
+		.tim 
+		{
+			float: left;
+			margin-top: 35px;
+			margin-left: 50px;
+			list-style: none;
+			color: red;
+		}
+		.tem 
+		{
+			float: left;
+			margin-top: 20px;
+			margin-left: 40px;
+			list-style: none;
+		}
+		.x 
+		{
+			float: left;
+			list-style: none;
+			margin-left: 100px;
+			font-size: 13px;
+			margin-top: 30px;
+		}
+		.fd 
+		{
+			margin-top: 40px;
+		}
+		.it1 
+		{
+			float: left;
+			width: 15%;
+			height: 300px;
+			background-color: white;
+		}
+		.it2 
+		{
+			float: left;
+			width: 15%;
+			height: 300px;
+			background-color: white;
+		}
+		.it3 
+		{
+			float: left;
+			width: 25%;
+			height: 300px;
+			background-color: white;
+		}
+		.it4 
+		{
+			float: left;
+			width: 15%;
+			height: 300px;
+			background-color: white;
+		}
+		.it5
+		{
+			float: left;
+			width: 30%;
+			height: 300px;
+			background-color: white;
+		}
+		.bra
+		{
+
+			margin-top: 30px;
+			color: black;
+			
+			font-size: 18.1px;
+		}
+		.mud 
+		{
+			color: black;
+			font-size: 15px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.la 
+		{
+			color: black;
+			margin-top: 90px;
+			margin-left: 20px;
+			font-size: 15px;
+
+		}
+		.qw1 
+		{
+			float: left;
+			width: 20%;
+			height: 300px;
+			background-color: white;
+		}
+		.qw2 
+		{
+			float: left;
+			width: 20%;
+			height: 300px;
+			background-color: white;
+
+		}
+		.qw3
+		{
+			float: left;
+			width: 25%;
+			height: 300px;
+			background-color: white;
+
+		}
+		.qw4 
+		{
+			float: left;
+			width: 35%;
+			height: 300px;
+			background-color: white;
+
+		}
+
+		.nn 
+		{
+			border-bottom: 2px solid black;
+		}
+		.ta 
+		{
+			font-size: 15px;
+			margin-top: 100px;
+			color: black ;
+		}
+		.na 
+		{
+			border-right: none;
+			border-left: none;
+			border-top: none;
+		}
+		.nbc:hover
+		{
+			background-color: black;
+			color: white;
+		}
+		.bj:hover 
+		{
+			background-color: black;
+			color: white;
+		}
+		.new:hover 
+		{
+			background-color: black;
+			color: white;
+		}
+
+		/*@media only screen and (max-width:550px)
+		{
+			.b1 
+			{
+				width: 100%;
+				height: 200px;
+			}
+			.a1 
+			{
+				height: 200px;
+				margin-top: 20px;
+			}
+			.a6
+			{
+				height: 200px;
+				width: 30%;
+			}
+			.l 
+			{
+				height: 50%;
+				width: 50%;
+			}
+			.m 
+			{
+				margin-top: 1200px;
+				background-color: purple;
+			}*/
+
+		/*	body
+			{
+				background-color: red;
+			}
+		}*/
+			
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="a">
+		<div class="a1"><p class="poni">MY KALYAN/MEDIA/KALYAN NEWS/GOLD RATES/DIGITAL GOLD</p></div>
+		<div class="a2"></div>
+		<div class="a3"><p class="z2">STORE LOCATOR/FEEDBACK/CONTACT</p></div>
+		<div class="a4">
+			<ul>
+
+			
+			<li class="a6"><i id="a5" class="fa-brands fa-facebook"></i></li>
+            <li class="a6"><i id="a5" class="fa-brands fa-twitter"></i></li>
+            <li class="a6"><i id="a5" class="fa-brands fa-youtube"></i></li>
+            <li class="a6"><i id="a5" class="fa-solid fa-camera-retro"></i></li>
+        </ul>
+
+		</div>
+		
+
+
+
+	</div>
+	<div class="b">
+		<div class="navbar">
+			<ul class="p">
+				<li class="iu"><b>OUR BRANDS</b>
+
+
+					<div class="items">
+
+						<div class="it1">
+
+							<p class="bra"><b><span class="nn">BRANDS FAMILY</span></b></p><br>
+							<p class="mud"><p><a href="katrina.html"> MUDHRA</a></p><br>
+                               NIMAH<br>
+                               ANOKHI<br>
+                               RANG<br>
+                               TEJASVI<br>
+                               ZIAH</p>
+							
+
+
+						</div>
+						<div class="it2">
+
+
+							<p class="la">LAYA<br>
+                               GLO<br>
+                               CANDERE<br>
+                               VEDHA<br>
+                               APOORVA<br>
+                              HERA</p>
+							
+
+
+
+						</div>
+						<div class="it3">
+
+
+							<img src="photos/ki.webp">
+							
+
+
+						</div>
+						<div class="it4">
+							
+							<img src="photos/kp.webp">
+						</div>
+						<div class="it5">
+							
+
+							<img src="photos/d2.webp">
+						</div>
+						
+
+
+
+
+
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+				</li>
+				<li class="iu"><b>MUHURAT</b>
+
+
+					<div class="items">
+
+						<div class="qw1">
+							
+							<p class="bra"><b><span class="nn">MUHURAT</span></b></p><br><br>
+							<p  class="mud">
+								GUJARAT<br>
+                                MAHARASHTRA<br>
+                                PUNJAB & DELHI<br>
+                                RAJASTHAN<br>
+                                UP & MP
+							</p>
+
+
+						</div>
+					<div class="qw2">
+
+						<p class="ta">
+                        WEST BENGAL &<br>
+                        ODISHA
+                        KERALA
+                        KARNATAKA<br>
+                        TAMIL NADU
+                        ANDHRA PRADESH &<br>
+                         TELANGANA
+
+							</p>
+						
+
+
+
+					</div>
+					<div class="qw3">
+
+						<img src="photos/ki.webp">
+						
+
+
+					</div>
+					<div class="qw4">
+						
+						<img src="photos/a1.webp">
+					</div>
+
+						
+
+
+
+
+					</div>
+
+					
+
+
+
+
+
+
+				</li>
+				<li class="iu"><b>SHOP ONLINE</b></li>
+				<li class="iu"><b>JEWELLERY</b>
+
+
+					<div class="items">
+
+						<div class="qw1">
+							<ul>
+								<li>CHAINS</li>
+								<li>RINGS</li>
+								<li>NECKLACES</li>
+								<li>EARRINGS</li>
+								<li>BRACELETS</li>
+								<li>BANGLES</li>
+							</ul>
+						</div>
+						<div class="qw2">
+							<ul>
+								<li>GOLD</li>
+								<li>DIAMOND</li>
+								<li>PEARL</li>
+								<li>WHITE GOLD</li>
+								<li>GEMSTONE</li>
+								<li>PLATINUM</li>
+							</ul>
+						</div>
+						<div class="qw3">
+							<img src="photos/zan5.webp">
+							
+						</div>
+						<div class="qw4">
+							
+							<img src="photos/zan6.webp">
+						</div>
+						
+
+
+
+
+					</div>
+
+
+
+
+
+
+
+				</li>
+			</ul>
+		</div>
+		<div class="b2">
+			<img class="kl" src="photos/kallogo.svg" width="70%" height="100px">
+		</div>
+		<div class="navbar">
+			<ul class="p">
+				<li class="iu"><b>ABOUT US</b>
+
+					<div  class="items"></div>
+
+
+
+				</li>
+				<li class="iu"><b>GIFT CARD</b>
+
+
+					<div class="items"></div>
+
+				</li>
+				<li class="iu"><b>AMBASSADORS</b>
+
+
+					<div class="items"></div>
+
+
+
+				</li>
+				<li class="iu"><b>INVESTORS</b>
+
+
+					<div class="items"></div>
+
+
+
+
+				</li>
+			</ul>
+		</div>
+	<div id="c">
+	<img src="photos/band wallpaper.webp" height="480px" width="100%">
+	
+</div>
+<div class="d">
+	<h1 class="d1">MUHURAT</h1><br>
+	<p class="zx">Weddings are a deep-rooted element of our society, and Indian brides are known as symbols of beauty, pride and<br> elegance. India is a vast country with different customs and traditions practiced even within the same state. Yet,<br> there is something that unites us all - the "Muhurat" or the auspicious time for celebration. At Kalyan Jewellers, we<br> embrace the importance of every "Muhurat". Our wedding collections are for every bride, from every part of India.</p>
+</div>
+<div class="e">
+	<div class="e1">
+		<video src="video/kalyan.mp4" width="800px" height="450px"  muted autoplay controls></video>
+	</div>
+	<div class="e2">
+		<img class="xc" src="photos/koo.svg" width="300px" height="450px">
+	</div>
+</div>
+<div class="f">
+	<ul>
+		<li class="di"><img class="bo" src="photos/bord.webp" height="300px" width="300px"></li>
+		<li class="di"><h2 class="we">WE MAKE YOU<br>
+			FEEL SPECIAL</h2>
+		</li>
+		<li class="di"><img class="rd" src="photos/bord2.webp" height="300px" width="300px"></li>
+	</ul>
+	
+</div>
+<div class="g">
+	<h1 class="d1">BRANDS FAMILY</h1><br>
+	<p class="zx">India’s beauty lies in its diversity. Every part of India has its unique jewellery, the expertise to create those exist<br> only in that region, passed on through generations. Kalyan’s biggest strength is in these craftsmen who create<br> unique designs just for us from every nook and corner of India. And this range of jewellery, with those subtle<br> nuances and the perfect finish which you won’t find anywhere else is what we bring you through our various<br> brands.</p>
+	
+
+
+
+</div>
+<div class="h">
+	<ul class="u1">
+		<li class="o1"><img src="photos/anokhiji.svg" width="60%" height="60%"></li>
+		<li class="o1"><img src="photos/laya.svg" width="60%" height="60%"></li>
+		<li class="o1"><img src="photos/nimahji.svg" width="60%" height="60%"></li>
+		<li class="o1"><img src="photos
+			/tejas.svg" width="60%" height="60%"></li>
+		
+
+	</ul>
+	</div>
+
+	<div class="i">
+		<div class="i1"><h1>ABOUT US</h1><br><br>
+			<p class="old">We are one of the oldest business families in India with a family legacy of 112 years in business.<br> Started for the noble cause of nation-building and self-sustenance in a pre-independent India, the<br> forefathers believed ethical, honest and transparent business practices should form the foundation of the group.</p><br>
+
+       <p class="old">Having ventured into jewellery retailing in 1993 in Thrissur, Kerala, India, where we are headquartered, and as on June 30, 2020, we have 137 showrooms spread across India and GCC</p><br>
+       <button class="new">VIEW MORE</button>
+
+
+
+
+		</div>
+		<div class="i2">
+			<img src="photos/Capture.PNG" width="100%" height="350px">
+		</div>
+		
+</div>
+ <div class="j">
+	<h1 class="ch">CHAIRMAN'S<br>
+MESSAGE</h1><br><br>
+<p class="zx">Today, when I look around me, business is all about toplines, bottomlines and market capitalisation. But Kalyan entered into business in a pre-<br>independent India to build a better India, as our forefathers believed ethical, fair business will make India self-sufficient and strong.<br>
+Personally, I believe Kalyan Jewellers' major achievement is the trust we have earned from millions of people across the length and breadth of a huge<br> subcontinent like India, and abroad in the GCC.
+
+</p><br>
+<button class="bj">VIEW MORE</button>
+
+	</div>
+
+	<div class="k">
+		<img src="photos/men.webp" height="500px" width="100%">
+		
+</div>
+
+<div class="l">
+
+	<div class="l1">
+		
+		<img src="photos/rajj.webp" width="100%" height="300px">
+		<h1 class="dir">Rajesh Kalyanaraman - Executive Director</h1><br>
+		<p class="
+		dif">I feel our biggest differentiator is not only the ability to understand local, think local and act local, but at the same time bring in our vast experience and sourcing strength out of operating in multiple markets. Jewellery is a complicated product, because tastes vary even within the same state. What helps us here is the huge variety of products we stock from artisans across the country and even the Arab countries.
+
+</p><br>
+<button class="nbc">VIEW MORE</button>
+	</div>
+	<div class="l2">
+		<img src="photos/ramm.webp" width="100%" height="300px">
+		<h1 class="dir">Ramesh Kalyanaraman - Executive Director</h1><br>
+		<p class="dif">We have always visualized everything on a large scale. We always enjoyed making the road and never thought of following a trail. Massive marketing campaigns and launches, path-breaking ads which were never-before seen in jewellery advertising, multi-storey large format jewellery showrooms, same-day multi-launch ceremonies and events.
+
+</p><br>
+<button class="nbc">VIEW MORE</button>
+	</div>
+	</div>
+	<div class="m">
+		<div class="m1">
+			<div class="m3"><h1 class="news">KALYAN NEWS</h1></div>
+			<div class="m4">
+				<div class="m6">
+					<img src="photos/girl.webp" width="100%"><br><br>
+					<p class="an"><b>Kalyan Jewellers announces<br> wedding season offering with<br> Muhurat 2.0</b>
+</p><br>
+
+<p class="th">Thrissur, April 17, 2021: In a bid to<br> celebrate the diverse cultures and<br> changing preferences of millennial<br> brides-to-be, Kalyan Jewellers has<br> revamped its wedding jewellery<br> collection... read more
+
+</p>
+				</div>	
+				<div class="m7">
+					<img src="photos/pare.webp" width="100%"><br><br>
+					<p class="an"><b>Kalyan Jewellers announces first<br> phase of network expansion<br> post IPO</b>
+</p><br>
+<p class="th">Thrissur, March 30th, 2021: Kalyan<br> Jewellers, one of India’s largest<br> jewellery companies, has today<br> announced that the brand is<br> planning to increase its retail<br> footprint by 13% in the first quarter<br> itself. read more
+
+</p>
+
+				</div>
+				
+
+			</div>
+			<div class="m5">
+				<button class="nj">VIEW MORE</button>
+			</div>
+		</div>
+		<div class="m2">
+
+			<h1 class="news">BLOGS</h1><br>
+			<h2 class="mini">Minimalist Jewellery Trends</h2><br>
+			<p class="el">Minimalist jewellery is the look of the<br> moment, providing refined elegance and<br> ample opportunities to layer and self-<br>express. In this blog, we'll teach the tips<br> and tricks for successfully layering<br> different jewellery pieces to create a<br> stunning look!
+
+
+</p><br>
+<h2 class="mini">Minimalist Jewellery Trends</h2><br>
+<p class="el">A diamond in all its splendour, uncut,<br> unfaceted and unpolished! Welcome to<br> the exquisite world of Polkis. An all-time<br> favourite among brides and jewellery<br> lovers, Polkis are magnificent uncut<br> diamond jewellery that adds grace and<br> glamour to any occasion. </p><br><br><br><br><br><br><br><br>
+<button class="mm">VIEW MORE</button>
+			
+
+
+
+		</div>
+		
+
+	</div>
+
+	<div class="vid">
+		<div class="vid1"><h1 class="med">MEDIA</h1></div>
+		<div class="vid2">
+			<div class="v1"><video src="video/a.mp4" width="90%" height="200px" muted autoplay controls></div>
+			<div class="v2"><video src="video/c.mp4" width="90%" height="200px" muted autoplay controls></div>
+			<div class="v3"><video src="video/b.mp4" width="90%" height="200px" muted autoplay controls></div>
+			<div class="v4"><video src="video/d.mp4" width="90%" height="200px" muted autoplay controls></div>
+		</div>
+		<div class="tr"><button class="jf">VIEW MORE</button></div>
+	</div>
+
+	<div class="last">
+
+		<button class="le">SUBSCRIBE THE KALYAN NEWSLETTER</button>
+		<input class="lo" type="text" placeholder="Email address">
+
+		
+
+	</div>
+
+	<div class="late">
+
+
+		<div class="lt1">
+
+			<div class="n1">
+
+				<ul>
+					<li class="tom">
+				<select class="chi">
+					<option value="">Select Your Country</option>
+				   <option value="">India</option>
+				   	<option value="">UAE</option>
+				   	<option value="">America</option>
+				   	<option value="">Qatar</option>
+				   	<option value="">Qman</option>
+                  </select>
+			</li>
+
+                  <li class="tim">1800-4257333</li>
+                  <li class="tim">info@kalyanjewellers.net</li>
+                  <li class="tem"><i id="a5" class="fa-brands fa-facebook"></i>
+            <i id="a5" class="fa-brands fa-twitter"></i>
+            	<i id="a5" class="fa-brands fa-youtube"></i>
+            	<i id="a5" class="fa-solid fa-camera-retro"></i>
+
+
+            </li> 
+            <li class="tem"><i id="a5" class="fa-brands fa-youtube"></i></li>
+            <li class="tem"><i id="a5" class="fa-solid fa-camera-retro"></i></li>
+			</ul>
+			</div>
+			<div class="n2">
+				<ul>
+					<li class="x">ABOUT US<br>
+KALYAN NEWS<br>
+CONTACT US<br>
+STORE LOCATOR<br>
+MEDIA<br>
+THE KALYAN PROMISE<br>
+INVESTORS</li>
+
+    <li class="x">
+
+       	FAQ<br>
+CAREERS<br>
+BE INFORMED<br>
+EASY INSTALLMENT PLAN<br>
+PARTNERING WITH TRUST<br>
+GOLD RATE TODAY<br>
+ONLINE PURCHASE
+       </li>
+
+<li class="x">
+BLOG<br>
+WHY BUY FROM US<br>
+PRIVACY POLICY<br>
+TERMS AND CONDITIONS<br>
+SITEMAP<br>
+WIKIPEDIA
+	</li>
+				</ul>
+				
+			</div>
+			
+
+		</div>
+				<div class="lt2">
+				<p class="fd">FEEDBACK</p><br>
+				<input class="na" type="text" placeholder="Full Name" class="Full name"><br><br><br>
+				<input class="na" type="text" placeholder="Mobile.No:"><br><br><br>
+				<input class="na" type="text" placeholder="Email"><br><br><br>
+				<input class="na" type="text" placeholder="Feedback type"><br><br>
+				<button>SUBMIT</button>
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
+
+
+
